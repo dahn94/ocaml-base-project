@@ -1,0 +1,4 @@
+(executable
+ (name base-project)
+ (libraries math_utils)
+ (public_name base-project))

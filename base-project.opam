@@ -1,0 +1,21 @@
+opam-version: "2.0"
+name: "base-project"
+version: "0.1"
+synopsis: "OCaml base project with Dune"
+description: "Example OCaml base project organized with Dune."
+maintainer: "santana.dahn@gmail.com"
+authors: [ "Daniel A. Santana" ]
+license: "MIT"
+homepage: "https://github.com/dahn94/ocaml-base-project"
+bug-reports: "https://github.com/dahn94/ocaml-base-project/issues"
+depends: [
+  "ocaml" {>= "4.14.0"}
+  "dune" {>= "3.0"}
+  "alcotest" {>= "1.9.0"}
+  "odoc" {>= "3.1.0"}
+  "ocaml-lsp-server" {>= "1.23.0"}
+]
+build: [
+  [ "dune" "build" "-p" name "-j" jobs ]
+  [ "dune" "runtest" "-p" name "-j" jobs ] {with-test}
+]

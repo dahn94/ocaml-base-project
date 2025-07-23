@@ -1,0 +1,11 @@
+.vscode
+_build/
+_opam/
+*.install
+*.exe
+*.cmi
+*.cmo
+*.cmx
+*.o
+*.annot
+*.log

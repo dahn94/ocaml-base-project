@@ -1,0 +1,4 @@
+(library
+ (name math_utils)
+ (public_name base-project.math_utils)
+ (modules math_utils))
